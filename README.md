@@ -28,6 +28,8 @@ Assumptions:
 * Used data structures over in-memory DB for time purposes, should that be required you could use hsqldb.
 * BillId should be unique as looking forward to potential DB integration it's the easiest to use as a unique id.
 * No security/auuthorisation was required. Should that have been needed the @Secured tag could be used to specify roles the user requires to access the APIs.
+* Currently the car park size is set to 3 for quick and easy testing. If you would like to change that number look in the application.properties file and change the size there.
+* There are no current check on the car park size (negative number, etc). Assumed that it would always take the form of 0 < size < max int value.
 
 Going Forward:
 * Should this be used with a DB the BillId could be used as the Id, but would require an extra check to ensure no duplicate vehicle reg numbers are entered.
